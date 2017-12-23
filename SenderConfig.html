@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MDS | Sender Configuration</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+    
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/plugins/touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet">
+
+</head>
+<style>
+	.cursorpointer{
+		    cursor: pointer;
+	}
+	table thead,
+	.table th {
+		text-align: center;
+	}
+
+	.table thead,
+	.table td {
+		text-align: center;
+	}
+	textarea {
+	    resize: none;
+	}
+</style>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
+                             </span> <span class="text-muted text-xs block">Art Director <b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                            <li><a href="mailbox.html">Mailbox</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">Dashboard v.1</a></li>
+                        <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                        <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                        <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                        <li><a href="dashboard_5.html">Dashboard v.5 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-envelope"></i> <span class="nav-label">Send SMS</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="index.html">Group</a></li>
+                        <li><a href="dashboard_2.html">Single</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-address-book"></i> <span class="nav-label">Contact</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="graph_flot.html">Contact List</a></li>
+                        <li><a href="graph_morris.html">Black List</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="css_animation.html"><i class="fa fa-bell-o"></i> <span class="nav-label">Notifications</span><span class="label label-warning pull-right">62</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Report</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="graph_flot.html">Contact List</a></li>
+                        <li><a href="graph_morris.html">Black List</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="fa fa-gears"></i> <span class="nav-label">Config</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse in">
+                        <li class="active"><a href="SenderConfig.html">Sender</a></li>
+                        <li><a href="UserList.html">User List</a></li>
+                        <li ><a href="EditQuota.html">Edit Quota</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            
+        </div>
+<!--   Notification       -->
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to Admin..</span>
+                </li>
+                <li class="dropdown">
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>See All Alerts</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Sender Configuration</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a>Config</a>
+                        </li>
+                        <li class="active">
+                            <strong>Sender</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+			<div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+						<div class="form-group row">
+								  <div class="col-xs-6"> 
+									  
+								  </div>						  
+								  <div class="col-xs-6" style="text-align: right">
+								    <button class="btn btn-primary dim" type="button" onclick="modalAdd();"><i class="fa fa-plus" ></i></button>
+								  </div>
+								</div>
+                        <div class="table-responsive">
+                    
+	                    <table id="example" class="table table-striped table-bordered table-hover dataTables-exampledisplay" cellspacing="0" width="100%">
+					        <thead>
+					            <tr>
+					                <th width="20%">Sender</th>
+			                        <th width="20%">Owner</th>
+			                        <th width="20%">Quota</th>
+			                        <th width="10%">Status</th>
+			                        <th width="30%">Action</th>
+					            </tr>
+					        </thead>
+					        <tbody>
+					            <tr>
+					                <th>BluePay</th>
+					                <th>BluePay</th>
+					                <th>173623</th>
+					                <th><font color="green">Enable</font></th>
+					                <th>
+						                <button class="btn btn-success  dim" type="button"><i class="fa fa-align-justify"></i></button>
+						                <button class="btn btn-info  dim" type="button"><i class="fa fa-copy"></i></button>
+						                <button class="btn btn-warning  dim" type="button"><i class="fa fa-edit"></i></button>
+						                <button class="btn btn-danger  dim" type="button"><i class="fa fa-trash"></i></button>
+									</th>
+					                
+					            </tr>
+					            <tr>
+					                <th>Easycash</th>
+					                <th>Easycash</th>
+					                <th>998731</th>
+					                <th><font color="green">Enable</font></th>
+					                <th>
+						                <button class="btn btn-success  dim" type="button"><i class="fa fa-align-justify"></i></button>
+						                <button class="btn btn-info  dim" type="button"><i class="fa fa-copy"></i></button>
+						                <button class="btn btn-warning  dim" type="button"><i class="fa fa-edit"></i></button>
+						                <button class="btn btn-danger  dim" type="button"><i class="fa fa-trash"></i></button>
+									</th>
+					                
+					            </tr>
+					            <tr>
+					                <th>BluePay</th>
+					                <th>BluePay</th>
+					                <th>173623</th>
+					                <th><font color="red">Disable</font></th>
+					                <th>
+						                <button class="btn btn-success  dim" type="button"><i class="fa fa-align-justify"></i></button>
+						                <button class="btn btn-info  dim" type="button"><i class="fa fa-copy"></i></button>
+						                <button class="btn btn-warning  dim" type="button"><i class="fa fa-edit"></i></button>
+						                <button class="btn btn-danger  dim" type="button"><i class="fa fa-trash"></i></button>
+									</th>
+					                
+					            </tr>
+					            <tr>
+					                <th>BluePay</th>
+					                <th>BluePay</th>
+					                <th>173623</th>
+					                <th><font color="red">Disable</font></th>
+					                <th>
+						                <button class="btn btn-success  dim" type="button"><i class="fa fa-align-justify"></i></button>
+						                <button class="btn btn-info  dim" type="button"><i class="fa fa-copy"></i></button>
+						                <button class="btn btn-warning  dim" type="button"><i class="fa fa-edit"></i></button>
+						                <button class="btn btn-danger  dim" type="button"><i class="fa fa-trash"></i></button>
+									</th>
+					                
+					            </tr>
+					            <tr>
+					                <th>BluePay</th>
+					                <th>BluePay</th>
+					                <th>173623</th>
+					                <th><font color="red">Disable</font></th>
+					                <th>
+						                <button class="btn btn-success  dim" type="button"><i class="fa fa-align-justify"></i></button>
+						                <button class="btn btn-info  dim" type="button"><i class="fa fa-copy"></i></button>
+						                <button class="btn btn-warning  dim" type="button"><i class="fa fa-edit"></i></button>
+						                <button class="btn btn-danger  dim" type="button"><i class="fa fa-trash"></i></button>
+									</th>
+					                
+					            </tr>
+					            <tr>
+					                <th>BluePay</th>
+					                <th>BluePay</th>
+					                <th>173623</th>
+					                <th><font color="red">Disable</font></th>
+					                <th>
+						                <button class="btn btn-success  dim" type="button"><i class="fa fa-align-justify"></i></button>
+						                <button class="btn btn-info  dim" type="button"><i class="fa fa-copy"></i></button>
+						                <button class="btn btn-warning  dim" type="button"><i class="fa fa-edit"></i></button>
+						                <button class="btn btn-danger  dim" type="button"><i class="fa fa-trash"></i></button>
+									</th>
+					                
+					            </tr>
+					            <tr>
+					                <th>BluePay</th>
+					                <th>BluePay</th>
+					                <th>173623</th>
+					                <th><font color="red">Disable</font></th>
+					                <th>
+						                <button class="btn btn-success  dim" type="button"><i class="fa fa-align-justify"></i></button>
+						                <button class="btn btn-info  dim" type="button"><i class="fa fa-copy"></i></button>
+						                <button class="btn btn-warning  dim" type="button"><i class="fa fa-edit"></i></button>
+						                <button class="btn btn-danger  dim" type="button"><i class="fa fa-trash"></i></button>
+									</th>
+					                
+					            </tr>
+					        </tbody>
+					    </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+       		<div class="footer">
+            <div>
+                <strong>Copyright</strong> Aspire Thailand Co.,Ltd. All Rights Reserved. &copy; 2015 - 2018
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+		<!--   Modal               -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
+	    <div class="modal-dialog modal-lg">
+	        <div class="modal-content">
+	            <div class="modal-header ">
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                <h4 class="modal-title " id="modal_Title"></h4>
+	            </div>
+	            <div class="modal-body" id="modal_Detail">
+	          
+	            </div>
+	            <div class="modal-footer" id="modal_Btn">
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+    
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- TouchSpin -->
+    <script src="js/plugins/touchspin/jquery.bootstrap-touchspin.min.js"></script>
+
+    <!-- Page-Level Scripts -->
+    <script>
+     
+     var table4 = $('#example').DataTable({
+			"pageLength": 50,
+			"bLengthChange": true,
+			"ordering": true,
+			"info": true,
+			"bFilter": true,
+		});
+		
+	
+	
+	 
+		
+	function modalAdd(){
+			
+				 
+			$("#modal_Title").html('Add new sender');
+		   	   			 
+			     $("#modal_Detail").html('<div class="row">'+
+											'<div class="col-sm-4 ">'+
+												    '<div class="form-group"><label>Is HTTPS:*</label>'+ 
+													    '<select class="form-control m-b" name="account">'+
+					                                        '<option >Yes</option>'+
+					                                        '<option selected>No</option>'+
+														'</select>'+
+												    '</div>'+
+											'</div>'+
+											'<div class="col-sm-8 ">'+
+												    '<div class="form-group"><label>Suffix URL</label><div class="input-group m-b"><span class="input-group-addon">/</span> <input type="text" placeholder="xxxx/xxxx.php" class="form-control"></div></div>'+
+											'</div>'+
+										'</div>'+
+										'<div class="row">'+
+											'<div class="col-sm-8">'+
+												    '<div class="form-group"><label>Host</label><input type="text" placeholder="Username" class="form-control"></div>'+
+											'</div>'+
+											'<div class="col-sm-4 ">'+
+												    '<div class="form-group"><label>Port:</label><div class="input-group m-b"><span class="input-group-addon">:</span> <input type="text" placeholder="Username" class="form-control" value="80"></div></div>'+
+											'</div>'+
+										'</div>'+
+										'<div class="row">'+
+											'<div class="col-sm-6">'+
+												    '<div class="form-group"><label>Sender:</label><input type="text" placeholder="UNTITLE" class="form-control" value="UNTITLE"></div>'+
+											'</div>'+
+											'<div class="col-sm-6 ">'+
+											    '<div class="form-group"><label>Owner:*</label>'+ 
+												    '<select class="form-control m-b" name="account">'+
+				                                        '<option selected>Administrator</option>'+
+				                                        '<option >Bluepay</option>'+
+													'</select>'+
+											    '</div>'+
+											'</div>'+
+										'</div>'+
+										'<div class="row">'+
+											'<div class="col-sm-6 ">'+
+											    '<div class="form-group"><label>Has Report:*</label>'+ 
+												    '<select class="form-control m-b" name="account">'+
+				                                        '<option selected>Yes</option>'+
+				                                        '<option >No</option>'+
+													'</select>'+
+											    '</div>'+
+											'</div>'+
+											'<div class="col-sm-6 ">'+
+												    '<div class="form-group"><label>Has Charge:</label><input type="text" placeholder="Username" class="form-control" value="N"></div>'+
+											'</div>'+
+										'</div>'+
+										'<div class="row">'+
+											'<div class="col-sm-6 ">'+
+												    '<div class="form-group"><label>Prefix Transaction ID:*</label><input type="text" placeholder="Username" class="form-control" value="BULK"></div>'+
+											'</div>'+
+											'<div class="col-sm-6 ">'+
+												    '<div class="form-group"><label>Code:*</label><input type="text" placeholder="Username" class="form-control" value="N"></div>'+
+											'</div>'+
+										'</div>'+
+										'<div class="row">'+
+											'<div class="col-sm-12 ">'+
+												    '<div class="form-group"><label>Quota:*</label><input class="touchspin3 form-control" type="text" value="0" name="demo3" style="display: block;"></div>'+
+											'</div>'+
+										'</div>'+
+										'<div class="row">'+
+											'<div class="col-sm-12 ">'+
+												    '<div class="form-group"><label>Detail:</label><textarea  type="text" class="form-control" rows="5" id="field" ></textarea></div>'+
+											'</div>'+
+										'</div>');
+									    
+									    
+				$("#modal_Btn").html('<button type="button" class="btn btn-w-m btn-primary">Save</button><button type="button" class="btn btn-w-m btn-danger" data-dismiss="modal">Cancel</button>');
+
+				$(".touchspin3").TouchSpin({
+	                verticalbuttons: true,
+	                buttondown_class: 'btn btn-white',
+	                buttonup_class: 'btn btn-white',
+	                max:1000000,
+				      verticalupclass: 'glyphicon glyphicon-plus',
+				      verticaldownclass: 'glyphicon glyphicon-minus'
+	            });
+	            
+				$('#myModal').modal();
+							
+		}
+    
+
+    </script>
+
+</body>
+
+</html>
